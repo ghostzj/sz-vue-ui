@@ -1,0 +1,71 @@
+.#{$prefix}-app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .#{$prefix}-app-header {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.08);
+    overflow: hidden;
+    .container {
+      width: 70%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        a, img {
+          display: block;
+        }
+      }
+      .nav {
+        display: flex;
+        .nav-item {
+          list-style: none;
+          padding: 0 20px;
+          a {
+            color: #666666;
+            font-size: 16px;
+            display: block;
+            height: 100%;
+          }
+          a.active {
+            color: #EC5327;
+            border-bottom: 4px solid #EC5327;
+          }
+        }
+        .nav-item.active {
+          a {
+            color: #EC5327;
+          }
+          border-bottom: 4px solid #EC5327;
+        }
+      }
+    }
+  }
+  .#{$prefix}-app-container {
+    flex: 1;
+    width: 100%;
+    background: #f8f8f8;
+    padding-top: 15px;
+    overflow: hidden;
+    min-width: 1050px;
+    .#{$prefix}-app-container-wrap {
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      .#{$prefix}-page-container {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+}
+@include scroll-bar;

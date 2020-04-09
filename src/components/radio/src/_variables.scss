@@ -1,0 +1,56 @@
+$--radio-font-color: $text-regular-color !default;
+$--radio-font-weight: $font-weight-primary !default;
+$--radio-font-size: $font-size-base !default;
+
+$--radio-input-border: $border-base !default;
+$--radio-input-border-radius: $border-radius-circle !default;
+$--radio-input-height: 14px !default;
+$--radio-input-width: 14px !default;
+$--radio-input-background-color: $white-color !default;
+$--radio-input-border-color-hover: $primary-color !default;
+
+$--radio-border-base: $border-base;
+$--radio-bordered-padding: 12px 20px 0 10px !default;
+$--radio-border-radius-base: $border-radius-base !default;
+$--radio-bordered-height: 40px !default;
+$--radio-border-check-color: $primary-color;
+$--radio-border-disabled-color: $border-lighter-color;
+
+$--radio-bordered-medium-padding: 10px 20px 0 10px !default;
+$--radio-bordered-medium-radius: $border-radius-base;
+$--radio-bordered-medium-height: 36px !default;
+$--radio-medium-font-size: $font-size-base;
+$--radio-bordered-medium-input-height: 14px !default;
+$--radio-bordered-medium-input-width: 14px !default;
+
+$--radio-bordered-small-padding: 8px 15px 0 10px !default;
+$--radio-bordered-small-radius: #{$border-radius-base - 1} !default;
+$--radio-bordered-small-height: 32px !default;
+$--radio-small-font-size: 12px !default;
+$--radio-bordered-small-input-height: 12px !default;
+$--radio-bordered-small-input-width: 12px !default;
+
+$--radio-bordered-mini-padding: 6px 15px 0 10px !default;
+$--radio-bordered-mini-radius: #{$border-radius-base - 1} !default;
+$--radio-bordered-mini-height: 28px !default;
+$--radio-mini-font-size: 12px !default;
+$--radio-bordered-mini-input-height: 12px !default;
+$--radio-bordered-mini-input-width: 12px !default;
+
+$--radio-disabled-input-fill: $disabled-fill-base-color !default;
+$--radio-disabled-input-border-color: $disabled-border-base-color !default;
+$--radio-disabled-icon-color: $disabled-fill-base-color !default;
+$--radio-disabled-font-color: $text-placeholder-color !default;
+$--radio-disabled-checked-input-fill: $disabled-fill-base-color !default;
+$--radio-disabled-checked-input-border-color: $disabled-border-base-color !default;
+$--radio-disabled-checked-icon-color: $text-placeholder-color !default;
+
+$--radio-checked-input-border-color: $primary-color !default;
+$--radio-checked-icon-color: $primary-color !default;
+$--radio-checked-font-color: $primary-color !default;
+
+$--radio-button-font-size: $font-size-base !default;
+$--radio-button-checked-background-color: $primary-color !default;
+$--radio-button-checked-font-color: $white-color !default;
+$--radio-button-checked-border-color: $primary-color !default;
+$--radio-button-disabled-checked-fill: $border-extra-light-color !default;

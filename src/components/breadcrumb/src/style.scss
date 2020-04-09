@@ -1,0 +1,51 @@
+@include b(breadcrumb) {
+  font-size: 14px;
+  line-height: 1;
+  @include utils-clearfix;
+
+  @include e(separator) {
+    margin: 0 9px;
+    font-weight: bold;
+    color: $text-placeholder-color;
+
+    &[class*=icon] {
+      margin: 0 6px;
+      font-weight: normal;
+    }
+  }
+
+  @include e(item) {
+    float: left;
+
+    @include e(inner) {
+      color: $text-regular-color;
+
+      &.is-link, & a {
+        font-weight: bold;
+        text-decoration: none;
+        transition: $color-transition-base;
+        color: $text-primary-color;
+
+        &:hover {
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:last-child {
+      .sz-breadcrumb__inner,
+      .sz-breadcrumb__inner a {
+        &, &:hover {
+          font-weight: normal;
+          color: $text-regular-color;
+          cursor: text;
+        }
+      }
+
+      .sz-breadcrumb__separator {
+        display: none;
+      }
+    }
+  }
+}

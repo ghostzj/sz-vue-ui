@@ -1,0 +1,29 @@
+$--select-border-color-hover: $border-color-hover !default;
+$--select-disabled-border: $disabled-border-base-color !default;
+$--select-font-size: $font-size-base !default;
+$--select-close-hover-color: $text-secondary-color !default;
+
+$--select-input-color: $text-placeholder-color !default;
+$--select-multiple-input-color: #666 !default;
+$--select-input-focus-border-color: $primary-color !default;
+$--select-input-font-size: 14px !default;
+
+$--select-option-color: $text-regular-color !default;
+$--select-option-disabled-color: $text-placeholder-color !default;
+$--select-option-disabled-background: $white-color !default;
+$--select-option-height: 34px !default;
+$--select-option-hover-background: $background-base-color !default;
+$--select-option-selected-font-color: $primary-color !default;
+$--select-option-selected-hover: $background-base-color !default;
+
+$--select-group-color: $info-color !default;
+$--select-group-height: 30px !default;
+$--select-group-font-size: 12px !default;
+
+$--select-dropdown-background: $white-color !default;
+$--select-dropdown-shadow: $box-shadow-light !default;
+$--select-dropdown-empty-color: #999 !default;
+$--select-dropdown-max-height: 274px !default;
+$--select-dropdown-padding: 6px 0 !default;
+$--select-dropdown-empty-padding: 10px 0 !default;
+$--select-dropdown-border: solid 1px $border-light-color !default;

@@ -1,0 +1,120 @@
+@import './variables';
+
+@include b(tree) {
+  position: relative;
+  cursor: default;
+  background: $white-color;
+  color: $--tree-font-color;
+
+  @include e(empty-block) {
+    position: relative;
+    min-height: 60px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include e(empty-text) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-secondary-color;
+    font-size: $font-size-base;
+  }
+
+  @include e(drop-indicator) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $primary-color;
+  }
+}
+
+@include b(tree-node) {
+  white-space: nowrap;
+  outline: none;
+  &:focus { /* focus */
+    > .sz-tree-node__content {
+      background-color: $--tree-node-hover-background-color;
+    }
+  }
+
+  @include when(drop-inner) {
+    > .sz-tree-node__content .sz-tree-node__label {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+
+  @include e(content) {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    cursor: pointer;
+
+    & > .sz-tree-node__expand-icon {
+      padding: 6px;
+    }
+    & > label.sz-checkbox {
+      margin-right: 8px;
+    }
+    &:hover {
+      background-color: $--tree-node-hover-background-color;
+    }
+
+    .sz-tree.is-dragging & {
+      cursor: move;
+
+      & * {
+        pointer-events: none;
+      }
+    }
+
+    .sz-tree.is-dragging.is-drop-not-allow & {
+      cursor: not-allowed;
+    }
+  }
+
+  @include e(expand-icon) {
+    cursor: pointer;
+    color: $--tree-expand-icon-color;
+    font-size: 12px;
+
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+
+    &.expanded {
+      transform: rotate(90deg);
+    }
+
+    &.is-leaf {
+      color: transparent;
+      cursor: default;
+    }
+  }
+
+  @include e(label) {
+    font-size: $font-size-base;
+  }
+
+  @include e(loading-icon) {
+    margin-right: 8px;
+    font-size: $font-size-base;
+    color: $--tree-expand-icon-color;
+  }
+
+  & > .sz-tree-node__children {
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  &.is-expanded > .sz-tree-node__children {
+    display: block;
+  }
+}
+
+.sz-tree--highlight-current .sz-tree-node.is-current > .sz-tree-node__content {
+  background-color: mix($white-color, $primary-color, 92%);
+}

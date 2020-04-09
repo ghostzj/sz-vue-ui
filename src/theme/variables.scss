@@ -1,0 +1,153 @@
+// type|skipAutoTranslation|Category|Order
+
+/* --------------------------Color-------------------------- */
+/// color|1|Brand Color|0
+$primary-color: #409EFF;
+/// color|1|Background Color|4
+$white-color: #FFFFFF;
+/// color|1|Background Color|4
+$black-color: #000000;
+$primary-light-color-1: mix($white-color, $primary-color, 10%) !default; /* 53a8ff */
+$primary-light-color-2: mix($white-color, $primary-color, 20%) !default; /* 66b1ff */
+$primary-light-color-3: mix($white-color, $primary-color, 30%) !default; /* 79bbff */
+$primary-light-color-4: mix($white-color, $primary-color, 40%) !default; /* 8cc5ff */
+$primary-light-color-5: mix($white-color, $primary-color, 50%) !default; /* a0cfff */
+$primary-light-color-6: mix($white-color, $primary-color, 60%) !default; /* b3d8ff */
+$primary-light-color-7: mix($white-color, $primary-color, 70%) !default; /* c6e2ff */
+$primary-light-color-8: mix($white-color, $primary-color, 80%) !default; /* d9ecff */
+$primary-light-color-9: mix($white-color, $primary-color, 90%) !default; /* ecf5ff */
+/// color|1|Functional Color|1
+$success-color: #67C23A !default;
+/// color|1|Functional Color|1
+$warning-color: #E6A23C !default;
+/// color|1|Functional Color|1
+$danger-color: #F56C6C !default;
+/// color|1|Functional Color|1
+$info-color: #909399 !default;
+$success-light-color: mix($white-color, $success-color, 80%) !default;
+$warning-light-color: mix($white-color, $warning-color, 80%) !default;
+$danger-light-color: mix($white-color, $danger-color, 80%) !default;
+$info-light-color: mix($white-color, $info-color, 80%) !default;
+$success-lighter-color: mix($white-color, $success-color, 90%) !default;
+$warning-lighter-color: mix($white-color, $warning-color, 90%) !default;
+$danger-lighter-color: mix($white-color, $danger-color, 90%) !default;
+$info-lighter-color: mix($white-color, $info-color, 90%) !default;
+/// color|1|Font Color|2
+$text-primary-color: #303133 !default;
+/// color|1|Font Color|2
+$text-regular-color: #606266 !default;
+/// color|1|Font Color|2
+$text-secondary-color: #909399 !default;
+/// color|1|Font Color|2
+$text-placeholder-color: #C0C4CC !default;
+/// color|1|Font Color|2
+$text-disabled-color: #bbb !default;
+/// color|1|Border Color|3
+$border-base-color: #DCDFE6 !default;
+/// color|1|Border Color|3
+$border-light-color: #E4E7ED !default;
+/// color|1|Border Color|3
+$border-lighter-color: #EBEEF5 !default;
+/// color|1|Border Color|3
+$border-extra-light-color: #F2F6FC !default;
+/// color|1|Background Color|4
+$background-base-color: #F5F7FA !default;
+
+/* --------------------------Link-------------------------- */
+$link-color: $primary-light-color-2 !default;
+$link-hover-color: $primary-color !default;
+
+$fill-base: $white-color !default;
+
+/* -------------------------- Disable base-------------------------- */
+$disabled-fill-base-color: $background-base-color !default;
+$disabled-color-base-color: $text-placeholder-color !default;
+$disabled-border-base-color: $border-light-color !default;
+
+
+/* --------------------------Typography-------------------------- */
+$font-path: 'fonts' !default;
+$font-display: 'auto' !default;
+/// fontSize|1|Font Size|0
+$font-size-extra-large: 20px !default;
+/// fontSize|1|Font Size|0
+$font-size-large: 18px !default;
+/// fontSize|1|Font Size|0
+$font-size-medium: 16px !default;
+/// fontSize|1|Font Size|0
+$font-size-base: 14px !default;
+/// fontSize|1|Font Size|0
+$font-size-small: 13px !default;
+/// fontSize|1|Font Size|0
+$font-size-extra-small: 12px !default;
+/// fontWeight|1|Font Weight|1
+$font-weight-primary: 500 !default;
+/// fontWeight|1|Font Weight|1
+$font-weight-secondary: 100 !default;
+/// fontLineHeight|1|Line Height|2
+$font-line-height-primary: 24px !default;
+/// fontLineHeight|1|Line Height|2
+$font-line-height-secondary: 16px !default;
+
+/* --------------------------Border-------------------------- */
+$border-width-base: 1px !default;
+$border-style-base: solid !default;
+$border-color-hover: $text-placeholder-color !default;
+$border-base: $border-width-base $border-style-base $border-base-color !default;
+/// borderRadius|1|Radius|0
+$border-radius-base: 4px !default;
+/// borderRadius|1|Radius|0
+$border-radius-small: 2px !default;
+/// borderRadius|1|Radius|0
+$border-radius-circle: 100% !default;
+/// borderRadius|1|Radius|0
+$border-radius-zero: 0 !default;
+// Box-shadow
+/// boxShadow|1|Shadow|1
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
+// boxShadow|1|Shadow|1
+$box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+/// boxShadow|1|Shadow|1
+$box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+
+/* --------------------------Transition-------------------------- */
+$all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$fade-linear-transition: opacity 200ms linear !default;
+$md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
+$color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
+
+/* --------------------------z-index-------------------------- */
+$index-normal: 1 !default;
+$index-top: 1000 !default;
+$index-popper: 2000 !default;
+
+/* Break-point
+--------------------------*/
+$--sm: 768px !default;
+$--md: 992px !default;
+$--lg: 1200px !default;
+$--xl: 1920px !default;
+
+$--breakpoints: (
+  'xs' : (max-width: $--sm - 1),
+  'sm' : (min-width: $--sm),
+  'md' : (min-width: $--md),
+  'lg' : (min-width: $--lg),
+  'xl' : (min-width: $--xl)
+);
+
+$--breakpoints-spec: (
+  'xs-only' : (max-width: $--sm - 1),
+  'sm-and-up' : (min-width: $--sm),
+  'sm-only': "(min-width: #{$--sm}) and (max-width: #{$--md - 1})",
+  'sm-and-down': (max-width: $--md - 1),
+  'md-and-up' : (min-width: $--md),
+  'md-only': "(min-width: #{$--md}) and (max-width: #{$--lg - 1})",
+  'md-and-down': (max-width: $--lg - 1),
+  'lg-and-up' : (min-width: $--lg),
+  'lg-only': "(min-width: #{$--lg}) and (max-width: #{$--xl - 1})",
+  'lg-and-down': (max-width: $--xl - 1),
+  'xl-only' : (min-width: $--xl),
+);

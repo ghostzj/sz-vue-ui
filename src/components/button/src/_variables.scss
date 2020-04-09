@@ -1,0 +1,79 @@
+$--button-hover-tint-percent: 20% !default;
+$--button-active-shade-percent: 10% !default;
+// size
+$--button-font-size: $font-size-base !default;
+$--button-font-weight: $font-weight-primary !default;
+$--button-border-radius: $border-radius-base !default;
+$--button-border-base: $border-base !default;
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 20px !default;
+
+$--button-medium-font-size: $font-size-base !default;
+$--button-medium-border-radius: $border-radius-base !default;
+$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-horizontal: 20px !default;
+
+$--button-small-font-size: 12px !default;
+$--button-small-border-radius: #{$border-radius-base - 1} !default;
+$--button-small-padding-vertical: 9px !default;
+$--button-small-padding-horizontal: 15px !default;
+
+$--button-mini-font-size: 12px !default;
+$--button-mini-border-radius: #{$border-radius-base - 1} !default;
+$--button-mini-padding-vertical: 7px !default;
+$--button-mini-padding-horizontal: 15px !default;
+
+// default color
+$--button-default-font-color: $text-regular-color !default;
+$--button-default-background-color: $white-color !default;
+$--button-default-border-color: $border-base-color !default;
+$--button-default-font-color-h: $primary-color !default;
+$--button-default-background-color-h:  $white-color !default;
+$--button-default-border-color-h: $primary-color !default;
+$--button-default-font-color-a: mix($black-color, $primary-color, $--button-active-shade-percent);
+$--button-default-background-color-a: $white-color !default;
+$--button-default-border-color-a: mix($black-color, $primary-color, $--button-active-shade-percent);
+
+// plain color
+$--button-default-plain-font-color-h: $primary-color !default;
+$--button-default-plain-background-color-h: $white-color !default;
+$--button-default-plain-border-color-h: $primary-color  !default;
+$--button-default-plain-font-color-a: mix($black-color, $primary-color, $--button-active-shade-percent);
+$--button-default-plain-background-color-a: $white-color !default;
+$--button-default-plain-border-color-a: mix($black-color, $primary-color, $--button-active-shade-percent);
+
+// text color
+$--button-default-text-font-color: $primary-color !default;
+$--button-default-text-font-color-h: mix($white-color, $primary-color, $--button-hover-tint-percent) !default;
+$--button-default-text-font-color-a: mix($white-color, $primary-color, $--button-active-shade-percent) !default;
+
+// disabled color
+$--button-disabled-font-color: $text-placeholder-color !default;
+$--button-disabled-background-color: $white-color !default;
+$--button-disabled-border-color: $border-lighter-color !default;
+
+// primary color
+$--button-primary-border-color: $primary-color !default;
+$--button-primary-font-color: $white-color !default;
+$--button-primary-background-color: $primary-color !default;
+
+// success color
+$--button-success-border-color: $success-color !default;
+$--button-success-font-color: $white-color !default;
+$--button-success-background-color: $success-color !default;
+
+// warning color
+$--button-warning-border-color: $warning-color !default;
+$--button-warning-font-color: $white-color !default;
+$--button-warning-background-color: $warning-color !default;
+
+// danger color
+$--button-danger-border-color: $danger-color !default;
+$--button-danger-font-color: $white-color !default;
+$--button-danger-background-color: $danger-color !default;
+
+// info color
+$--button-info-border-color: $info-color !default;
+$--button-info-font-color: $white-color !default;
+$--button-info-background-color: $info-color !default;
+

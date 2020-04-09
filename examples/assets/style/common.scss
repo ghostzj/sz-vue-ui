@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  border: 0;
+}
+
+body {
+  font-size: $font-size-base;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.c {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.demo-block.demo-popover {
+  .sz-popover + .sz-popover {
+    margin-left: 10px;
+  }
+  .sz-input {
+    width: 360px;
+  }
+  .sz-button {
+    margin-left: 10px;
+  }
+}

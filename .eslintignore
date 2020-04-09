@@ -1,0 +1,6 @@
+src/utils/*
+src/mixins/*.js
+*.md
+*.scss
+*.woff
+*.ttf
